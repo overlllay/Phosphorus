@@ -36,7 +36,11 @@ class ChatService(
             .model("gpt-3.5-turbo")
             .messages(messages)
             .build()
-        return doOpenAiChat(request)
+
+        val chatMessage = doOpenAiChat(request)
+        val cacheKey = CHAT_CONTEXT_MSG_KEY.format(preContext.chatId)
+        redisFacade.add(cacheKey, chatMessage)
+        return chatMessage
     }
 
     private fun doOpenAiChat(request: ChatCompletionRequest): ChatMessage {

@@ -17,7 +17,7 @@ class ChatServiceTests {
 
     @Test
     fun test() {
-        val message = chatService.chat("", "编写 typescript Hello world 程序")
+        val message = chatService.chat("chat-for-test", "编写 typescript Hello world 程序")
         println(message)
     }
 

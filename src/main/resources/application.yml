@@ -1,0 +1,23 @@
+# master-password: change-it-password
+jasypt.encryptor.password: ${master-password}
+
+openai:
+  token: ENC(5A1MsTZDkOvnXhkpiFua8GBfYYOsmfIylGYAf0NLyIKx2byRrCx4BG+gPdUjpX/Tfq/epZE7LImVg3alSn+v7gQph+ooEwaN8QMuwyy7f1WrxIRshUEnkmL4IHT/PHOL)
+  base-url: ENC(q8irQHw2UjyaHrE66Rh7FFrFhCCc6jbBECPjy53ijF33LrYHuRTgSeNcCEU8ERxx2Z1rI+bUxaSQ5VRLauzKEw==)
+  read-timeout: 10m
+
+lark:
+  client:
+    app-id: cli_9f87e42e7c72900e
+    app-secret: ENC(z3hpjnS9osma9Ouy1SvPd8V1/gGrvaf0AsttDrg2t+0J70rEUxSb6DHpUF/lHe5whrZtwXBLQE5T3AxwB3x9vjiwJUx3OJL4fIQn/HkuYSo=)
+  verification-token: ENC(UgQv36Y05rhSoLTOXoNnmRHrJjzgtrE4tZ6OtB5n9bjPGTYHW0KCCA+6nLMajZ+PZAPBoFv2MsIWY7aw1JOquF3FsF1mro76EEp7dTXUjlQ=)
+
+spring:
+  data:
+    redis:
+      host: ENC(y7HodItj2DAgYHjh3JxztakQY3jzJKdOaWcn3VLzN089dwmQVLxwDxr2WfkC/6jP)
+      password: ENC(MbXiEqNaQDjoSSklTWF86LaNy/0yRbuahfMB1dsSG3n2M6y4Eo14+h43s5uTz4gW)
+wx:
+  mp:
+    app-id: wx8d1799013de5214b
+    secret: ENC(bVEyjR9Ia5HW/aIQ701CqxrOBtKogj0BX/sSEwL42J8KvXLBEULTeLZ8HNUmB1uAAERZHyqZ31xT3ZGy5pyXZ9CjyMUjfgaHM+GlSnkTqAE=)
